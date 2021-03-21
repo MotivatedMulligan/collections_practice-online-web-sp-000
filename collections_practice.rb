@@ -30,18 +30,18 @@ end  #works
 def sum_array(array)
   array.inject(0) {|sum, num| sum += num}
 end  #works
+
 def swap_elements(array)
       array[1], array[2] = array[2], array[1]
 array
-    end
+end
 ############################
 def kesha_maker(array)
   array.each.split
-  input[2] = '$'
   array
 end
 
-def add_s(array,index)
+def add_s(array, index)
 
   if array.index(1)
       puts "feet"
