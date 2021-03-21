@@ -37,7 +37,7 @@ array
 end
 ############################
 def kesha_maker(array)
-  array.each.split
+  array.collect {|word| word[2]= $ }
   array
 end
 
