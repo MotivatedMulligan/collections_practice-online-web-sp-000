@@ -43,10 +43,9 @@ end #works
 
 ############################
 def add_s(input)
-  input.each_with_index.map do |element, index|
-    index == 1 ? element : element[element.length] = "s"
+  input.each_with_index do |element, index|
+    element[element.length] = "s" unless index == 1
   end
-  input # ⇐ HERE :: return the mutated object
 end
 
 end
