@@ -34,19 +34,19 @@ end  #works
 def swap_elements(array)
       array[1], array[2] = array[2], array[1]
 array
-end
-############################
+end #works
+
 def kesha_maker(array)
   array.collect {|word| word[2]= "$" }
   array
-end
+end #works
 
-def add_s(array, index)
-
-  if array.index(1)
-      puts "feet"
-  else
-    "#{element} + s"
+############################
+def add_s(input)
+  input.each_with_index.map do |element, index|
+    index == 1 ? element : element[element.length] = "s"
   end
+  input # ⇐ HERE :: return the mutated object
+end
 
 end
