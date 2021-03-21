@@ -47,5 +47,3 @@ def add_s(input)
     element[element.length] = "s" unless index == 1
   end
 end
-
-
